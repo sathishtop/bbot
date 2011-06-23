@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
         birthdays << user
       end
     end
-    UserMailer.deliver_birthday_notification(Trojans::EMAIL, birthdays) if !birthdays.empty?
+    UserMailer.deliver_birthday_notification(Ms::EMAIL, birthdays) if !birthdays.empty?
   end
 
 end

@@ -24,9 +24,10 @@ Bbot::Application.configure do
                     :port           => 25,
                     :domain         => "gmail.com",
                     :authentication => :plain,
-                    :user_name      => "marvellousstars06@gmail.com",
+                    :user_name      => "nav.ms.06@gmail.com",
                     :password       => "NavMs2006"
                     }
+  config.action_mailer.perform_deliveries = true
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

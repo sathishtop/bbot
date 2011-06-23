@@ -10,20 +10,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100901081024) do
-
-  create_table "user_mailers", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name",       :null => false
-    t.string   "email",      :null => false
-    t.date     "dob"
-    t.string   "phone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 0) do
 
 end

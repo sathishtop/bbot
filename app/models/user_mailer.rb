@@ -7,9 +7,9 @@ class UserMailer < ActionMailer::Base
   protected
 
   def setup_email(user)    
-    @recipients = "#{Trojans::EMAIL}"
-    @from = "MS <#{Trojans::FROM_EMAIL}>"
-    @reply_to = "To <#{Trojans::FROM_EMAIL}>"
+    @recipients = "#{Ms::EMAIL}"
+    @from = "MS <#{Ms::FROM_EMAIL}>"
+    @reply_to = "To <#{Ms::FROM_EMAIL}>"
     @subject = "Happy Birthday"
     @sent_on = Time.now
     @body[:user] = user
